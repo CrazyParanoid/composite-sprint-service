@@ -1,0 +1,22 @@
+{
+    sprintById(id: "7cd80807-807c-498f-8cf9-fe0c2bed403c"){
+        name
+        goal
+        startDate
+        endDate
+        sprintDays
+        projectKey
+        tasks {
+            id
+            summary
+            workFlowStatus
+            priority
+            description
+            workDays
+            workHours
+            projectKey
+            assignee
+            sprintId
+        }
+    }
+}

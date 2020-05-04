@@ -1,0 +1,32 @@
+spring.profiles.active: develop
+spring.main.allow-bean-definition-overriding: true
+
+server.port: 8080
+
+spring:
+  application:
+    name: composite-sprint-service
+
+feign:
+  hystrix:
+    enabled: true
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: ALWAYS
+
+rest:
+  readTimeOut: 20000
+  connectionTimeOut: 20000
+
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    service-url:
+      defaultZone: ${EUREKA_URL}

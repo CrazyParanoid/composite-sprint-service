@@ -1,0 +1,22 @@
+{
+  sprints{
+    name
+    goal
+    startDate
+    endDate
+    sprintDays
+    projectKey
+    tasks {
+      id
+      summary
+      workFlowStatus
+      priority
+      description
+      workDays
+      workHours
+      projectKey
+      assignee
+      sprintId
+    }
+  }
+}
